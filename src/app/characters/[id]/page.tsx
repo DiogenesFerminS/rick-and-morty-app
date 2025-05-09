@@ -1,6 +1,6 @@
 import DetailsCharacter from "@/app/components/functionality/DetailsCharacter";
 
-const page = async({params}: {params: Promise<{id: string}>}) => {
+const Page = async({params}: {params: Promise<{id: string}>}) => {
 
   const id:string = (await params).id;
 
@@ -9,4 +9,4 @@ const page = async({params}: {params: Promise<{id: string}>}) => {
   )
 }
 
-export default page
+export default Page
